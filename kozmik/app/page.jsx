@@ -13,7 +13,7 @@ const CK={rose:"#c77080",teal:"#6ec9b5",purple:"#9b7ec8",gold:"#c9a96e"};
 const TABS=[{k:"chart",l:"✦ chart"},{k:"self",l:"☽ self"},{k:"dasha",l:"◈ dasha"},{k:"transits",l:"⊕ transits"},{k:"weekly",l:"◷ weekly"},{k:"today",l:"☀ today"},{k:"chat",l:"✦ ask"},{k:"compat",l:"♡ match"}];
 
 async function callClaude(prompt,system,messages){
-  const body={model:"claude-sonnet-4-20250514",max_tokens:3000};
+    const body={model:"claude-sonnet-4-20250514",max_tokens:8000};
   if(system)body.system=system;
   body.messages=messages||[{role:"user",content:prompt}];
   const r=await fetch("/api/claude",{
