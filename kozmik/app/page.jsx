@@ -5,7 +5,7 @@ const MONTHS=["January","February","March","April","May","June","July","August",
 const DAYS=Array.from({length:31},(_,i)=>String(i+1).padStart(2,"0"));
 const YEARS=Array.from({length:81},(_,i)=>2010-i);
 const HOURS=Array.from({length:24},(_,i)=>String(i).padStart(2,"0"));
-const MINS=Array.from({length:12},(_,i)=>String(i*5).padStart(2,"0"));
+const MINS=Array.from({length:60},(_,i)=>String(i).padStart(2,"0"));
 const TZ=["UTC-12:00","UTC-11:00","UTC-10:00","UTC-09:00","UTC-08:00 (PST)","UTC-07:00 (MST)","UTC-06:00 (CST)","UTC-05:00 (EST)","UTC-04:00","UTC-03:00","UTC-02:00","UTC-01:00","UTC+00:00 (GMT)","UTC+01:00 (CET)","UTC+02:00 (EET)","UTC+03:00","UTC+03:30","UTC+04:00","UTC+04:30","UTC+05:00 (PKT)","UTC+05:30 (IST)","UTC+05:45","UTC+06:00","UTC+06:30","UTC+07:00","UTC+08:00 (CST)","UTC+09:00 (JST)","UTC+09:30","UTC+10:00 (AEST)","UTC+11:00","UTC+12:00 (NZST)"];
 const NC={auspicious:"#c9a96e",adverse:"#c77080",intense:"#9b7ec8",neutral:"#6ec9b5"};
 const NB={auspicious:"rgba(201,169,110,.08)",adverse:"rgba(199,112,128,.08)",intense:"rgba(155,126,200,.09)",neutral:"rgba(110,201,181,.06)"};
