@@ -10,7 +10,7 @@ const TZ=["UTC-12:00","UTC-11:00","UTC-10:00","UTC-09:00","UTC-08:00 (PST)","UTC
 const NC={auspicious:"#c9a96e",adverse:"#c77080",intense:"#9b7ec8",neutral:"#6ec9b5"};
 const NB={auspicious:"rgba(201,169,110,.08)",adverse:"rgba(199,112,128,.08)",intense:"rgba(155,126,200,.09)",neutral:"rgba(110,201,181,.06)"};
 const CK={rose:"#c77080",teal:"#6ec9b5",purple:"#9b7ec8",gold:"#c9a96e"};
-const TABS=[{k:"chart",l:"✦ chart"},{k:"self",l:"☽ self"},{k:"dasha",l:"◈ dasha"},{k:"weekly",l:"◷ weekly"},{k:"today",l:"☀ today"}],{k:"chat",l:"✦ ask"},{k:"compat",l:"♡ match"}];
+const TABS=[{k:"chart",l:"✦ chart"},{k:"self",l:"☽ self"},{k:"dasha",l:"◈ dasha"},{k:"weekly",l:"◷ weekly"},{k:"today",l:"☀ today"},{k:"chat",l:"✦ ask"},{k:"compat",l:"♡ match"}];
 
 async function callClaude(prompt,system,messages){
     const body={model:"claude-sonnet-4-20250514",max_tokens:5000};
