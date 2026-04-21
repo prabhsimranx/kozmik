@@ -1,4 +1,4 @@
-"use client";
+"use client"; 
 import { useState, useRef, useEffect } from "react";
 
 const MONTHS=["January","February","March","April","May","June","July","August","September","October","November","December"];
