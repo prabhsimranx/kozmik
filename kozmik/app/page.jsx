@@ -1,4 +1,4 @@
-			const body={model:"claude-sonnet-4-5-20250929",max_tokens:4000};"use client"; 
+			"use client";
 import { useState, useRef, useEffect } from "react";
 
 const MONTHS=["January","February","March","April","May","June","July","August","September","October","November","December"];
