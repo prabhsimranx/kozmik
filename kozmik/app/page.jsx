@@ -13,7 +13,7 @@ const CK={rose:"#c77080",teal:"#6ec9b5",purple:"#9b7ec8",gold:"#c9a96e"};
 const TABS=[{k:"chart",l:"✦ chart"},{k:"self",l:"☽ self"},{k:"dasha",l:"◈ dasha"},{k:"weekly",l:"◷ weekly"},{k:"today",l:"☀ today"},{k:"chat",l:"✦ ask"},{k:"compat",l:"♡ match"}];
 
 async function callClaude(prompt,system,messages){
-        const body={model:"claude-sonnet-4-5-20250929",max_tokens:2000};
+        			const body={model:"claude-sonnet-4-5-20250929",max_tokens:3000};
   if(system)body.system=system;
   body.messages=messages||[{role:"user",content:prompt}];
   const r=await fetch("/api/claude",{
@@ -195,7 +195,7 @@ export default function App(){
       setReading(r);
       setMsgs([{role:"assistant",content:`hey ${f.name} ✦ i've read your chart. ask me anything about your cosmos.`}]);
       setView("reading");setTab("chart");
-    }catch(e){setErr(e.message);setView("form");}
+    }catch(e){setErr("Hmm, we couldn't create your chart right now. Please try again in a moment.");setView("form");}
     setLoading(false);
   };
 
