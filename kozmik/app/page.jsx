@@ -277,27 +277,7 @@ export default function App(){
             {r.d&&<span style={{fontFamily:"'DM Mono',monospace",fontSize:11,color:"rgba(201,169,110,.55)"}}>{r.d}</span>}
           </div>
         ))}
-        <div className="kc" style={{marginTop:4}}>
-          <label className="kl" style={{marginBottom:12}}>PLANETARY POSITIONS</label>
-          {c.planets.map((p,i)=>(
-            <div key={i} style={{display:"flex",alignItems:"center",gap:11,padding:"9px 13px",background:NB[p.nature],border:`1px solid ${NC[p.nature]}22`,borderRadius:10,marginBottom:7}}>
-              <span style={{fontSize:15,width:20,textAlign:"center",color:NC[p.nature]}}>{p.glyph}</span>
-              <span style={{flex:1,fontFamily:"'Cormorant Garamond',serif",fontSize:15,color:"#e8e0d0"}}>{p.planet}</span>
-              <span style={{fontSize:13,color:"#999"}}>{p.sign}</span>
-              <span style={{fontSize:10,color:"#666",fontFamily:"'DM Mono',monospace",marginLeft:8}}>{p.house}</span>
-              <span style={{width:7,height:7,borderRadius:"50%",background:NC[p.nature],boxShadow:`0 0 5px ${NC[p.nature]}`,flexShrink:0,marginLeft:8}}/>
-            </div>
-          ))}
-          <div style={{display:"flex",gap:14,flexWrap:"wrap",marginTop:12}}>
-            {Object.entries({auspicious:"Auspicious",adverse:"Adverse",intense:"Intense",neutral:"Neutral"}).map(([k,l])=>(
-              <div key={k} style={{display:"flex",alignItems:"center",gap:5,fontSize:11,color:"#777"}}>
-                <span style={{width:6,height:6,borderRadius:"50%",background:NC[k],display:"inline-block"}}/>{l}
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    );
+);
   };
 
   const rSelf=()=>(
