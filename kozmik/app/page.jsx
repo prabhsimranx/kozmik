@@ -277,8 +277,9 @@ export default function App(){
             {r.d&&<span style={{fontFamily:"'DM Mono',monospace",fontSize:11,color:"rgba(201,169,110,.55)"}}>{r.d}</span>}
           </div>
         ))}
-);
-  };
+	  </div>
+		);
+		};
 
   const rSelf=()=>(
     <div>{reading.personality.map((p,i)=>(
